@@ -25,7 +25,11 @@ select an installed indexer, or `--port 8002` if port 8001 is occupied.
 Publish the files in this directory as the GitHub repository root. Keep
 `builds/` and the original mirror out of the published repository.
 
-## Build separately
+## Update without starting the server
+
+Run `python3 update.py` to check the latest release, build it if needed, and
+print a command to serve it later. It uses the same Pagefind selection as the
+launcher. You can also select a release and Pagefind executable explicitly.
 
 Run from the repository root with Python 3.12+ and an existing Pagefind executable
 that provides the Component UI. This command uses the Pagefind 1.6.0 executable
